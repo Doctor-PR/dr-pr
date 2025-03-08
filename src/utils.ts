@@ -90,7 +90,7 @@ export const triggerWorkflow = async (
     await octokit.rest.actions.createWorkflowDispatch({
       owner,
       repo,
-      workflow_id: "fix-pr.yml",
+      workflow_id: "doctor-pr.yml",
       ref,
       inputs,
     });
